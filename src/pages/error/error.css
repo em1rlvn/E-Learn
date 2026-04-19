@@ -1,0 +1,76 @@
+.error-page {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: radial-gradient(circle at top, rgba(138, 75, 175, 0.15), transparent 35%),
+    linear-gradient(135deg, #120b2d 0%, #270d46 45%, #1f1a3c 100%);
+  color: #f7f5ff;
+  position: relative;
+  overflow: hidden;
+}
+
+.error-card {
+  z-index: 1;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  background: rgba(13, 7, 28, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  padding: 48px 32px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.25);
+  animation: floatCard 1.8s ease-in-out infinite alternate;
+}
+
+.error-icon {
+  margin: 0 auto 24px;
+  width: 96px;
+  height: 96px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  font-size: 3rem;
+  color: #ff8a00;
+}
+
+.error-card h1 {
+  font-size: 42px;
+  margin-bottom: 18px;
+  letter-spacing: -0.04em;
+}
+
+.error-card p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.75;
+  margin-bottom: 26px;
+  font-size: 18px;
+}
+
+.error-btn {
+  display: center;
+  margin-top: 10px;
+}
+
+.error-glow {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(138, 75, 175, 0.35), transparent 58%);
+  filter: blur(40px);
+  top: -40px;
+  right: -80px;
+  pointer-events: none;
+}
+
+@keyframes floatCard {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-12px);
+  }
+}

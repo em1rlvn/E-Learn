@@ -1,0 +1,127 @@
+.users {
+  width: 100%;
+  padding: 30px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  min-height: calc(100vh - 150px);
+
+  h1 {
+    font-size: 28px;
+    color: var(--text-color);
+    margin-bottom: 24px;
+    border-bottom: 3px solid #8a4baf;
+    padding-bottom: 12px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--card-shadow);
+    margin-top: 20px;
+
+    thead {
+      background: linear-gradient(135deg, #8a4baf 0%, #b575d3 100%);
+      color: white;
+    }
+
+    th {
+      padding: 16px;
+      text-align: left;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--card-shadow);
+      color: var(--text-color);
+    }
+
+    tbody tr {
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: rgba(138, 75, 175, 0.05);
+      }
+
+      &:last-child td {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 8px;
+
+    button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+
+      &.update-btn {
+        background: #4CAF50;
+        color: white;
+
+        &:hover {
+          background: #45a049;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+        }
+      }
+
+      &.delete-btn {
+        background: #f44336;
+        color: white;
+
+        &:hover {
+          background: #da190b;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(244, 67, 54, 0.3);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .users {
+    padding: 16px;
+    overflow-x: auto;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    table {
+      font-size: 12px;
+      min-width: 600px;
+    }
+
+    th,
+    td {
+      padding: 10px 8px;
+    }
+
+    .action-buttons {
+      flex-direction: column;
+      gap: 4px;
+
+      button {
+        padding: 6px 12px;
+        font-size: 10px;
+      }
+    }
+  }
+}

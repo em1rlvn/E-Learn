@@ -1,3 +1,27 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --header-bg: #ffffff;
+  --header-shadow: rgba(0, 0, 0, 0.08);
+  --link-color: #333333;
+  --link-hover: #8a4baf;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --home-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --header-bg: #2d2d2d;
+  --header-shadow: rgba(0, 0, 0, 0.3);
+  --link-color: #ffffff;
+  --link-hover: #b575d3;
+  --card-bg: #2d2d2d;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+  --home-bg: linear-gradient(135deg, #29104e 0%, #1b1631 55%, #0f0b17 100%);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +29,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 code {

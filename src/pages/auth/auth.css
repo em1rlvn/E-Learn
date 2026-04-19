@@ -1,0 +1,48 @@
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: var(--bg-color);
+
+  .auth-form {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    width: 300px;
+
+    h2 {
+      font-size: 24px;
+      color: var(--link-hover);
+      margin-bottom: 15px;
+    }
+
+    form {
+      text-align: left;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: var(--text-color);
+      }
+
+      input {
+        width: 92%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .error {
+        color: #e74c3c;
+        font-size: 12px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

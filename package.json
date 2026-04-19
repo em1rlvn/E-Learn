@@ -1,8 +1,8 @@
 {
-  "name": "my-app",
+  "name": "E-Learn",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://emirlan-kz.github.io/my-app",
+  "homepage": "https://em1rlvn.github.io/E-Learn/",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
