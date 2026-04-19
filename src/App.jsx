@@ -32,7 +32,7 @@ const App = () => {
       {loading ? (
         <Loading />
       ) : (
-        <BrowserRouter>
+        <BrowserRouter basename="/E-Learn">
           <div className="app">
             <Header isAuth={isAuth} />
             <main>
